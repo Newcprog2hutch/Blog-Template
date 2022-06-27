@@ -1,0 +1,347 @@
+/* I am Nemesis */
+/* #Zenmode */
+*,*::after,::before{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+html{font-size: 62.5%;overflow-x: hidden;}
+body{
+    background-color: whitesmoke;
+}
+
+.nav-main{
+
+}
+.navbar{
+    width: 100%;
+    /* position: fixed; */
+    height: 5rem;
+    background:#767676;
+    display: flex;
+    align-items: center;
+    /* margin-top: 1.1rem; */
+}
+.list-item{
+    display: flex;
+    margin-top: 1.1rem;
+    /* flex-direction: column; */
+    /* margin-top: 1.rem; */
+}
+.list-item li{
+    list-style: none;
+    margin-left: 7rem;
+}
+.list-item .l1{
+    margin-left: 1.5rem;
+}
+.list-item li a{
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color:whitesmoke;  
+}
+.list-item li a:hover{
+    color: wheat;   
+}
+.header{
+    margin-top: 1.23rem;
+    text-align: center;
+}
+.welcome{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.1rem;
+}
+.con-write{
+    background-color: rgb(250, 238, 238);
+    height: 45.45vh;
+    margin-top: 3.1rem;
+    width: 78.9vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+.con-write .cont-white{
+    background-color: rgb(239, 227, 227);
+    width: 72.396vw;
+    height: 40vh;
+    padding: 1.7rem;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.con-write .cont-white .intro{
+    margin-top: 1.1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.67rem;
+    line-height: 2.1rem;
+}
+.con-write .cont-white:hover{
+    /* statement when it will be hoverred around here */
+    background-color: #444b;
+    color: rgb(239, 227, 227);
+}
+.con-write:hover{
+    background-color: rgb(148, 141, 141);
+}
+.stabilize{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1.1rem;
+    margin-top: 3.78rem;
+    /* background-color: whitesmoke; */
+    margin-right: 1.1rem;
+}
+#post-form{
+    margin-top: 2.1rem;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#post-form #fileup{
+    align-self: baseline;
+    margin-top: 0.5rem;
+}
+
+#post-form .btn-form{
+    padding: 0.45rem;
+    display: flex;
+    cursor: pointer;
+    border: 1px solid  rgb(107, 107, 223);
+    border-radius: 3.45px;
+    padding-top: 0.9rem;
+    background-color: rgb(25, 131, 253);
+    color: whitesmoke;
+    margin-bottom: 1.53rem;
+    margin-top: -1rem;
+    margin-right: 0.5rem;
+    /* text-align: center; */
+    transition:all 0.14s ease-in-out;
+    /* color: greenyell */
+    
+}
+#post-form .btn-form:hover{
+    background-color: blue;
+    color: greenyellow;
+}
+.myfoot{
+    height: 25vh;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.myfoot .footerheader{
+    color: whitesmoke;
+}
+.myfoot .footerheader .footerpara{
+    color: whitesmoke;
+}
+
+@media screen and (max-width:1050px) {
+    .con-write{
+        height: 54.8vh;
+        width: 95.12vw;
+    }
+    .con-write .cont-white{
+        height: 49vh;
+        width: 89.6vw;
+    }
+}
+
+@media screen and (max-width:831px) {
+    .con-write{
+        height: 50.8vh;
+        width: 95.12vw;
+    }
+    .con-write .cont-white{
+        height: 40vh;
+        width: 89.6vw;
+    }
+}
+/* }customizing the height and width and for the personal phones and tablet here */
+/* I pad Air this side */
+@media screen and (max-width:821px) and (max-height:1181px) {
+    .con-write{
+        height: 49.8vh;
+        width: 95.12vw;
+    }
+    .con-write .cont-white{
+        height: 39vh;
+        width: 89.6vw;
+    }
+}
+@media screen and (max-width:807px) {
+    .con-write{
+        height: 54vh;
+        margin-top: 1rem;
+    }
+    .con-write .cont-white{
+        height: 49vh;
+    }
+    
+}
+
+/* from next we will use flex-wrap and grid so that we can use limited amount of media query  */
+/* using grid template coloumns and the normal wrapping techniques using flex-wrap  and the best option is that we will from now use the simple and normal 2 to 4 flex-box properties consodering only the width because height can be easily adjustable device to device and it would be so awesome if we combine them and accurately make our website responsive rather than making it more like flex and flex all arounbd to hinder small small properties like height and width */
+
+@media screen and (max-width:790px) {
+    /* here we will focus more on increasing the height in tthis section */
+    .con-write{
+        height: 55vh;
+        margin-top: 1rem;
+    }
+    .con-write .cont-white{
+        height: 48vh;
+    }
+    .con-write .cont-white .intro{
+        font-size: 1.4rem;
+        /* padding: 0.1rem; */
+        margin-top: 0rem;
+    }
+}
+
+/* Ipad mini */
+@media screen and (max-width:769px) and (max-height:1025px) {
+    .con-write{
+        height: 55vh;
+        margin-top: 1rem;
+    }
+    .con-write .cont-white{
+        height: 40vh;
+    }
+    .con-write .cont-white .intro{
+        font-size: 1.4rem;
+        line-height: 1.9rem;
+        /* padding: 0.1rem; */
+        margin-top: 0rem;
+    }
+}
+
+@media screen and (max-width:718px) {
+    .con-write{
+        height: 57vh;
+        margin-top: 1rem;
+    }
+    .con-write .cont-white{
+        height: 50vh;
+    }
+    .con-write .cont-white .intro{
+        font-size: 1.2rem;
+        /* padding: 0.1rem; */
+        margin-top: 0rem;
+    }
+}
+@media screen and (max-width:577px) {
+    .con-write{
+        height: 45vh;
+        margin-top: 1rem;
+    }
+    .con-write .cont-white{
+        height: 40vh;
+    }
+    .con-write .cont-white .intro{
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+        /* padding: 0.1rem; */
+        margin-top: 0rem;
+    }
+}
+@media screen and (max-width:489px) {
+    .con-write{
+        height: 54vh;
+        margin-top: 1rem;
+    }
+    .con-write .cont-white{
+        height: 47vh;
+    }
+    .con-write .cont-white .intro{
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+        /* padding: 0.1rem; */
+        margin-top: 0rem;
+    }
+}
+ /* speciafically for the iphone se Special additon code is to be written in it in here */
+/* samsung galaxy s20 ultra  */
+@media screen and (max-width:413px) and (max-height:916px) {
+    .con-write{
+        height: 45vh;
+        margin-top: 1rem;
+    }
+    .con-write .cont-white{
+        height: 37vh;
+    }
+    .con-write .cont-white .intro{
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+        /* padding: 0.1rem; */
+        margin-top: 0rem;
+    }
+}
+/* samsung galaxy s20 ultra upside here */
+ @media screen and (max-width:389px){
+    /* line-height: 1.4rem; */
+
+    /* injecting the css in here */
+    .con-write{
+        height: 54vh;
+        margin-top: 1rem;
+    }
+    .con-write .cont-white{
+        height: 47vh;
+    }
+    .con-write .cont-white .intro{
+        font-size: 1.1rem;
+        line-height: 1.25rem;
+        /* padding: 0.1rem; */
+        margin-top: 0rem;
+    }
+}
+
+/* creating for the main thing here we can make the formally in here */
+
+/* writting the media queries in here for the navbar in here*/
+@media screen and (max-width:640px) {
+    .navbar{
+        justify-content: center;
+    }
+    .navbar .list-item{
+        /* flex-wrap: wrap; */
+    }
+    .navbar .list-item li {
+        margin-left: 7rem;
+    }
+    .navbar .list-item .l1 {
+        margin-left: 0.5rem;
+    }
+}
+
+@media screen and (max-width:448px) {
+    .navbar{
+
+    }
+    .navbar .list-item{
+
+    }
+    .navbar .list-item li{
+        margin-left: 5rem;
+    }
+    .navbar .list-item .l1{
+
+    }
+    .navbar .list-item li a{
+        font-size: 1.4rem;
+    }
+}
+@media screen and (max-width:360px) {
+    
+}

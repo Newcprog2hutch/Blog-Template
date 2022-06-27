@@ -1,0 +1,341 @@
+<!-- now here we have to make the very important thing in js folder in here  which is  the login page in here -->
+
+
+<!-- now its time to use javascript -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <link rel="stylesheet" href="/csstoken/index.ccfabaea.css">
+    <link rel="stylesheet" href="/csstoken/index.72fdf3a0.css">
+    
+</head>
+
+<!-- small css portion in here -->
+<style>
+    /* ncss withut media queries */
+    /* .card-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+    html{
+        overflow-x: hidden;
+    }
+
+    @media screen and (max-width:487px) {
+        .pes {
+            height: 22vh;
+        }
+    }
+
+    @media screen and (min-width:738px) {
+        .res {}
+
+        .pes {
+            height: 23vh;
+        }
+
+        .absres {
+            display: flex;
+            height: 21vh;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    @media screen and (min-width:910px) {
+
+        .res p {
+            /* margin-top: 3rem; */
+        }
+
+        .pes {
+            height: 22vh;
+            width: 63vw;
+        }
+
+        .absres {
+            display: flex;
+            height: 21vh;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .button-pack {
+            text-align: center;
+            margin-top: 3px;
+            padding-bottom: 3px;
+        }
+    }
+
+    /* @media screen and (min-width:) {
+        
+    } */
+
+    /* newest media queries in here */
+
+
+
+    @media screen and (min-width:500px) {
+
+        .store {
+            width: 87.60%;
+        }
+
+        .epp {
+            margin-top: 2.03rem;
+        }
+
+        .wide {
+            /* text-align: center; */
+            width: 80%;
+        }
+
+        .charge {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .image {
+            -o-object-fit: contain;
+            object-fit: contain;
+        }
+
+        /* handling the image quality in here */
+
+    }
+
+    @media screen and (min-width:718px) {
+        /* we will handle main content and mainly so much operations in here and also we will make the comment section in here */
+
+        .store {
+            width: 88.6%;
+        }
+
+        .epp {}
+
+        .wide {
+            width: 100%;
+            height: 43vh;
+        }
+
+        .charge {}
+
+        .image {
+            height: 42vh;
+            /* -o-object-fit: contain; */
+            -o-object-fit: contain;
+            object-fit: contain;
+            width: 43vw;
+        }
+    }
+
+    @media screen and (min-width:1024px) {
+        .store {
+            width: 80%;
+        }
+
+        .epp {}
+
+        .wide {
+            width: 100%;
+            height: 67vh;
+            position: relative;
+        }
+
+        .card-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .charge {}
+
+        .image {
+            height: 67vh;
+            /* -o-object-fit: contain; */
+            -o-object-fit: contain;
+            object-fit: contain;
+            position: absolute;
+            width: 100%;
+        }
+    }
+
+    /* now here we have values of the media queries in here*/
+    @media screen and (min-width:1200px) {
+        .mast-area {
+            width: 64vw;
+        }
+
+        .mast-button {
+            width: 5vw;
+        }
+    }
+    @media screen and (max-width:600px) {
+        .fa li{
+            margin-top: 6px;
+        }
+    }
+
+   /* one liner awesome media query for the ipad adjustment of 16 ratio 9 image in the blog located in here */
+
+    @media screen and (max-width:962px) {
+        .wide .image{
+            width: 655px;
+        }
+    }
+
+/* one liner awesome media query for the ipad adjustment of 16 ratio 9 image in the blog located in here */
+</style>
+
+<body>
+
+
+    <!-- place for nav component in here -->
+    <div class="flex flex-col">
+        <nav class="h-20 w-[100vw] bg-[#444b] gap-3 md:flex md:items-center md:center lg:h-14" style="margin-left: 0rem;">
+            <ul class="fa flex gap-3 mt-5 justify-center items-center">
+                <li class="mx-3 hover:text-orange-300 mt-0 md:mt-2"><a href="/templates/index.html">Home</a></li>
+                <li class="mx-3 hover:text-orange-300 mt-0 md:mt-2"><a href="#">About Us</a></li>
+                <li class="mx-3 hover:text-orange-300 mt-0 md:mt-2"><a target="_blank" href="/templates/index6.html">Wirte Blog</a></li>
+                <li class="mx-3 hover:text-orange-300 mt-0 md:mt-2"><a href="#">LogOut</a></li>
+                <!-- <li><a href=""></a></li> -->
+                <!-- we are using the sam ecomponent in here like this and just like that in here -->
+            </ul>
+        </nav>
+    </div>
+
+    <!-- place for here only in this section in here -->
+    <main class="flex flex-col items-center">
+        <div class="store">
+            <h1 class="epp text-4xl text-center font-semibold mt-1">Hackers stole Social Security numbers in Flagstar data breach affecting 1.5 million customers</h1>
+
+            <!-- author info in here -->
+
+            <div class="auth-info mt-2 text-center">
+                <span class="font-sans text-xs">Vedant Tiwari</span>
+                <span class="font-sans text-xs">6:20 AM GMT + 5:30</span>
+            </div>
+
+            <!-- this is a figure tag which i will configure it later in here -->
+
+            <div class="charge">
+                <figure class="wide w-[100%] h-[12rem] relative flex justify-center mt-5">
+                    <img src="/assets/imgs/bi1.webp" alt="image is loading probably in here"
+                        class="image absolute h-[12rem] w-[90%]">
+                </figure>
+            </div>
+
+
+            <div class="content-fire para mx-3 mt-[2.28rem]">
+                <p class="font-semibold font-serif">Flagstar Bank, one of the largest financial service providers in the United States, has notified more than 1.5 million customers of a data breach in which Social Security numbers were stolen — its second incident in two years.
+                    In a letter sent to those affected, Michigan-headquartered Flagstar revealed that hackers breached its corporate network between December 3 and December 4, 2021. After an investigation, the bank discovered on June 2, 2022 that the threat actors accessed sensitive customer details.
+                    “Flagstar recently experienced a cyber incident that involved unauthorized access to our network,” the company said in the letter. “Upon learning of the incident, we promptly activated our incident response plan, engaged external cybersecurity professionals experienced in handling these types of incidents, and reported the matter to federal law enforcement.”</p>
+                    <!-- speparting paragrapg is here -->
+                <p class="font-semibold font-serif">TechCrunch asked Flagstar why it took the company almost six months to detect the data breach but the company declined to answer. It also declined to confirm which of its systems were breached during the incident or the specific number of customers affected.
+                    However, based on information submitted to the Office of the Maine Attorney General, the data breach affected 1,547,169 people in the United States.
+                    This isn’t the first time Flagstar has been compromised. In January 2021, the company became one of the many victims of the Accellion hack that saw vulnerabilities in the vendor’s legacy file transfer appliance (FTA) exploited to steal corporate documents. In the case of Flagstar, stolen data included names, Social Security numbers, addresses, tax records, and phone numbers.
+                    The Accellion breach, which also claimed Morgan Stanley, cybersecurity firm Qualys and grocery giant Kroger as victims, has since been linked to the notorious Clop ransomware gang.</p>
+            </div>
+
+        </div>
+
+        <!-- making the most important div section in here so we can also make it posiible to run the most important function such as comment section in here -->
+        <div class="upper w-[100%] flex justify-center ">
+            <div class="hr-contain w-[80%] bg-red-200 font-bold mt-4 mb-5">
+                <hr class="bg-red-200">
+            </div>
+        </div>
+
+        <!-- after the line thsi is the comment section in here -->
+
+        <!-- Upper Comment Section in here -->
+        <div class="comment">
+            <h2 class="text-center text-2xl font-sans mb-2 mt-2">Comment Section </h2>
+            <div class="comment-card flex flex-col items-center justify-center ">
+                <form action="" method="post" class="flex flex-col justify-center items-end">
+                    <textarea name="comment" id="" cols="40" rows="3"
+                        class="mast-area border-2 font-serif rounded-sm border-emerald-200 md:w-[88vw]"></textarea>
+
+                    <!-- inside this text area -->
+
+                    <button type="submit"
+                        class="mast-button w-[15vw] border-2 mt-3 bg-[#9e9eff] rounded hover:bg-blue-400 border-emerald-200 shadow-sm hover:shadow-md md:w-[10vw]">Submit</button>
+
+                </form>
+            </div>
+
+            <!-- this will show the values in here  -->
+
+            <div class="show-section-comment">
+                <span class="show-section"></span>
+            </div>
+        </div>
+    </main>
+
+    <!-- here we aregoing to load this div in here so that we can esily make it work like that -->
+    <div class="upper w-[100%] flex justify-center ">
+        <div class="hr-contain w-[80%] bg-red-900 font-bold mt-4 mb-5">
+            <hr class="bg-red-800">
+        </div>
+    </div>
+
+    <!-- repeted content is starttig from here only so we can easily do it here -->
+
+    <div class="card-section">
+        <h2 class="font-bold text-center text-2xl">More From Us on Misleaneous Categories</h2>
+        <div class="sm-card m-3 rounded-sm bg-[whitesmoke] h-[22vh] flex justify-center pes">
+
+            <!-- in this we have to use the values like in div -->
+
+            <div class="short-content mt-2 res">
+                <p class="font-bold ml-2"><a href="#"> is the best card in this universe which i am going to produc in
+                        here also i want to make this blog accessible in this blog eac </a></p>
+                <!-- <br class="mb-2"> -->
+                <span class="author block font-sans font-semibold ml-2 mt-3">*By Chris Malhan</span>
+            </div>
+
+            <div class="absres relative w-96 h-56 mt-2 mr-1">
+                <img src="/assets/imgs/repl.jpg" alt="" class="absolute xl:h-[19vh]">
+            </div>
+
+        </div>
+
+        <div class="upper w-[100%] flex justify-center ">
+            <div class="hr-contain w-[90%] bg-red-900 font-bold mt-4 mb-5">
+                <hr class="bg-red-800">
+            </div>
+        </div>
+
+        <div class="sm-card m-3 rounded-sm bg-[whitesmoke] h-[22vh] flex justify-center pes">
+
+            <!-- in this we have to use the values like in div -->
+
+            <div class="short-content mt-2 res">
+                <p class="font-bold ml-2"><a href="#"> is the best card in this universe which i am going to produc in
+                        here also i want to make this blog accessible in this blog eac </a></p>
+                <!-- <br class="mb-2"> -->
+                <span class="author block font-sans font-semibold ml-2 mt-3">*By Chris Malhan</span>
+            </div>
+
+            <div class="absres relative w-96 h-56 mt-2 mr-1">
+                <img src="/assets/imgs/repl.jpg" alt="" class="absolute xl:h-[19vh]">
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- here is the frntend logic in here that we can use so that i can make it look so professional blog page which also includes category inside it so that we can generate many blog pages more easily in here -->
+</body>
+<!-- this is the etion of the script in here -->
+
+</html>

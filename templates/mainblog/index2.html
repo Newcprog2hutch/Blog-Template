@@ -1,0 +1,368 @@
+<!-- now here we have to make the very important thing in js folder in here  which is  the login page in here -->
+
+
+<!-- now its time to use javascript -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <link rel="stylesheet" href="/csstoken/index.ccfabaea.css">
+    <link rel="stylesheet" href="/csstoken/index.72fdf3a0.css">
+    
+</head>
+
+<!-- small css portion in here -->
+<style>
+    /* ncss withut media queries */
+    /* .card-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+    html{
+        overflow-x: hidden;
+    }
+
+    @media screen and (max-width:487px) {
+        .pes {
+            height: 22vh;
+        }
+    }
+
+    @media screen and (min-width:738px) {
+        .res {}
+
+        .pes {
+            height: 23vh;
+        }
+
+        .absres {
+            display: flex;
+            height: 21vh;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    @media screen and (min-width:910px) {
+
+        .res p {
+            /* margin-top: 3rem; */
+        }
+
+        .pes {
+            height: 22vh;
+            width: 63vw;
+        }
+
+        .absres {
+            display: flex;
+            height: 21vh;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .button-pack {
+            text-align: center;
+            margin-top: 3px;
+            padding-bottom: 3px;
+        }
+    }
+
+    /* @media screen and (min-width:) {
+        
+    } */
+
+    /* newest media queries in here */
+
+
+
+    @media screen and (min-width:500px) {
+
+        .store {
+            width: 87.60%;
+        }
+
+        .epp {
+            margin-top: 2.03rem;
+        }
+
+        .wide {
+            /* text-align: center; */
+            width: 80%;
+        }
+
+        .charge {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .image {
+            -o-object-fit: contain;
+            object-fit: contain;
+        }
+
+        /* handling the image quality in here */
+
+    }
+
+    @media screen and (min-width:718px) {
+        /* we will handle main content and mainly so much operations in here and also we will make the comment section in here */
+
+        .store {
+            width: 88.6%;
+        }
+
+        .epp {}
+
+        .wide {
+            width: 100%;
+            height: 43vh;
+        }
+
+        .charge {}
+
+        .image {
+            height: 42vh;
+            /* -o-object-fit: contain; */
+            -o-object-fit: contain;
+            object-fit: contain;
+            width: 43vw;
+        }
+    }
+
+    @media screen and (min-width:1024px) {
+        .store {
+            width: 80%;
+        }
+
+        .epp {}
+
+        .wide {
+            width: 100%;
+            height: 67vh;
+            position: relative;
+        }
+
+        .card-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .charge {}
+
+        .image {
+            height: 67vh;
+            /* -o-object-fit: contain; */
+            -o-object-fit: contain;
+            object-fit: contain;
+            position: absolute;
+            width: 100%;
+        }
+    }
+
+    /* now here we have values of the media queries in here*/
+    @media screen and (min-width:1200px) {
+        .mast-area {
+            width: 64vw;
+        }
+
+        .mast-button {
+            width: 5vw;
+        }
+    }
+    @media screen and (max-width:600px) {
+        .fa li{
+            margin-top: 6px;
+        }
+    }
+
+   /* one liner awesome media query for the ipad adjustment of 16 ratio 9 image in the blog located in here */
+
+    @media screen and (max-width:962px) {
+        .wide .image{
+            width: 655px;
+        }
+    }
+
+/* one liner awesome media query for the ipad adjustment of 16 ratio 9 image in the blog located in here */
+</style>
+
+<body>
+
+
+    <!-- place for nav component in here -->
+    <div class="flex flex-col">
+        <nav class="h-20 w-[100vw] bg-[#444b] gap-3 md:flex md:items-center md:center lg:h-14" style="margin-left: 0rem;">
+            <ul class="fa flex gap-3 mt-5 justify-center items-center">
+                <li class="mx-3 hover:text-orange-300 mt-0 md:mt-2"><a href="/templates/index.html">Home</a></li>
+                <li class="mx-3 hover:text-orange-300 mt-0 md:mt-2"><a href="#">About Us</a></li>
+                <li class="mx-3 hover:text-orange-300 mt-0 md:mt-2"><a target="_blank" href="/templates/index6.html">Wirte Blog</a></li>
+                <li class="mx-3 hover:text-orange-300 mt-0 md:mt-2"><a href="#">LogOut</a></li>
+                <!-- <li><a href=""></a></li> -->
+                <!-- we are using the sam ecomponent in here like this and just like that in here -->
+            </ul>
+        </nav>
+    </div>
+
+    <!-- place for here only in this section in here -->
+    <main class="flex flex-col items-center">
+        <div class="store">
+            <h1 class="epp text-4xl text-center mt-1">Environmental Problems</h1>
+
+            <!-- author info in here -->
+
+            <div class="auth-info mt-2 text-center">
+                <span class="font-sans text-xs">Bhagwan Bisht</span>
+                <span class="font-sans text-xs">6:21 PM GMT + 5:30</span>
+            </div>
+
+            <!-- this is a figure tag which i will configure it later in here -->
+
+            <div class="charge">
+                <figure class="wide w-[100%] h-[12rem] relative flex justify-center mt-5">
+                    <img src="/assets/imgs/img1.88dfd054.jpg" alt="image is loading probably in here"
+                        class="image absolute h-[12rem] w-[90%]">
+                </figure>
+            </div>
+
+
+            <div class="content-fire para mx-3 mt-[2.28rem]">
+                <p class="font-semibold font-serif">Environment is very good in this multiverse also i want some peoples
+                    here so that we can make the life extremely good using somme natural resorces in a good manner also
+                    we have to controll our population so that we can minimixe the dependence on the re.................
+                    this is my that we can make the life extremely good using somme natural resorces in a good manner
+                    also we have to tibus eum repudiandae delectus... this is my that we can make the life extremely
+                    good using somme natural resorces in a good manner also we have to tibus eum repudiandae delectus.
+                    Similique, vero maiores. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae ab, odit
+                    porro quis blanditiis doloribus consectetur rem facilis cupiditate totam! Blanditiis, ducimus
+                    cupiditate facere magnam architecto temporibus, suscipit, quidem sequi hic dicta consequuntur
+                    numquam obcaecati excepturi quas corporis doloribus ipsum saepe. Natus amet sapiente doloribus. Odio
+                    dicta accusantium eos rerum magni reprehenderit ab, laudantium adipisci dignissimos sit</p>
+                    <!-- speparting paragrapg is here -->
+                <p class="font-semibold font-serif"> incidunt modi amet fuga fugit optio iste quis. Perferendis
+                    distinctio expedita ipsam. Nemo enim excepturi doloribus, voluptatem consectetur quae natus magnam
+                    libero! Et, beatae cupiditate, expedita vero illum unde quo quos, blanditiis aspernatur earum
+                    nesciunt? Tenetur soluta repudiandae odit quasi fugit quae reiciendis deserunt! Illum vero
+                    aspernatur esse quos odit. Consequuntur amet suscipit aspernatur ab sit! Magnam impedit, consectetur
+                    ut ex assumenda eius reiciendis in atque optio voluptates quae nam incidunt aut. Tempore laudantium
+                    consectetur dolorum aliquid amet laborum delectus itaque harum rem repellat nulla aut velit sapiente
+                    ea ut, porro alias recusandae ullam, blanditiis excepturi illo! Reprehenderit ratione tempore
+                    dolores voluptatem reiciendis? Tempora doloribus voluptas et perspiciatis similique maxime mollitia
+                    quas laborum, ex quisquam itaque magni nam voluptatem adipisci minima! Eos pariatur animi soluta
+                    unde? Quis fugiat adipisci fugit soluta. Mollitia eveniet deserunt omnis tenetur repellendus, sed
+                    repellat id reprehenderit totam ab minima unde, incidunt illo dignissimos nam doloribus cumque
+                    officia ipsum vero ipsam impedit. Quas quasi accusamus vitae id iure fugiat ullam quae in delectus
+                    repellat expedita alias rerum adipisci asperiores hic, possimus molestias doloremque blanditiis
+                    voluptatum atque placeat, optio corrupti tempore amet! Quas saepe debitis architecto, facilis eum
+                    ipsam quia. Fugiat ipsum minima saepe et. Non facere, pariatur ex praesentium culpa assumenda quasi
+                    debitis inventore qui nam numquam voluptatem ducimus vel fuga optio veniam tenetur? Neque commodi
+                    optio beatae quo quos, pariatur at delectus deleniti? Nobis, debitis. Tempore porro laborum, autem,
+                    error hic culpa incidunt facilis veniam recusandae facere sed quasi nihil fugiat provident repellat,
+                    aliquid eius omnis maxime odio quam aliquam distinctio rem sint. Possimus repellendus, quo quisquam
+                    modi eos consectetur exercitationem, molestias dolor inventore vel consequuntur eum numquam ipsa
+                    voluptates. Facilis esse quidem iste cupiditate adipisci distinctio ipsam eveniet atque consequatur
+                    similique!</p>
+            </div>
+
+        </div>
+
+        <!-- making the most important div section in here so we can also make it posiible to run the most important function such as comment section in here -->
+        <div class="upper w-[100%] flex justify-center ">
+            <div class="hr-contain w-[80%] bg-red-200 font-bold mt-4 mb-5">
+                <hr class="bg-red-200">
+            </div>
+        </div>
+
+        <!-- after the line thsi is the comment section in here -->
+
+        <!-- Upper Comment Section in here -->
+        <div class="comment">
+            <h2 class="text-center text-2xl font-sans mb-2 mt-2">Comment Section </h2>
+            <div class="comment-card flex flex-col items-center justify-center ">
+                <form action="" method="post" class="flex flex-col justify-center items-end">
+                    <textarea name="comment" id="" cols="40" rows="3"
+                        class="mast-area border-2 font-serif rounded-sm border-emerald-200 md:w-[88vw]"></textarea>
+
+                    <!-- inside this text area -->
+
+                    <button type="submit"
+                        class="mast-button w-[15vw] border-2 mt-3 bg-[#9e9eff] rounded hover:bg-blue-400 border-emerald-200 shadow-sm hover:shadow-md md:w-[10vw]">Submit</button>
+
+                </form>
+            </div>
+
+            <!-- this will show the values in here  -->
+
+            <div class="show-section-comment">
+                <span class="show-section"></span>
+            </div>
+        </div>
+    </main>
+
+    <!-- here we aregoing to load this div in here so that we can esily make it work like that -->
+    <div class="upper w-[100%] flex justify-center ">
+        <div class="hr-contain w-[80%] bg-red-900 font-bold mt-4 mb-5">
+            <hr class="bg-red-800">
+        </div>
+    </div>
+
+    <!-- repeted content is starttig from here only so we can easily do it here -->
+
+    <div class="card-section">
+        <h2 class="font-bold text-center text-2xl">More From Us on Misleaneous Categories</h2>
+        <div class="sm-card m-3 rounded-sm bg-[whitesmoke] h-[22vh] flex justify-center pes">
+
+            <!-- in this we have to use the values like in div -->
+
+            <div class="short-content mt-2 res">
+                <p class="font-bold ml-2"><a href="#"> is the best card in this universe which i am going to produc in
+                        here also i want to make this blog accessible in this blog eac </a></p>
+                <!-- <br class="mb-2"> -->
+                <span class="author block font-sans font-semibold ml-2 mt-3">*By Chris Malhan</span>
+            </div>
+
+            <div class="absres relative w-96 h-56 mt-2 mr-1">
+                <img src="/assets/imgs/img1.88dfd054.jpg" alt="" class="absolute xl:h-[19vh]">
+            </div>
+
+        </div>
+
+        <div class="upper w-[100%] flex justify-center ">
+            <div class="hr-contain w-[90%] bg-red-900 font-bold mt-4 mb-5">
+                <hr class="bg-red-800">
+            </div>
+        </div>
+
+        <div class="sm-card m-3 rounded-sm bg-[whitesmoke] h-[22vh] flex justify-center pes">
+
+            <!-- in this we have to use the values like in div -->
+
+            <div class="short-content mt-2 res">
+                <p class="font-bold ml-2"><a href="#"> is the best card in this universe which i am going to produc in
+                        here also i want to make this blog accessible in this blog eac </a></p>
+                <!-- <br class="mb-2"> -->
+                <span class="author block font-sans font-semibold ml-2 mt-3">*By Chris Malhan</span>
+            </div>
+
+            <div class="absres relative w-96 h-56 mt-2 mr-1">
+                <img src="/assets/imgs/img1.88dfd054.jpg" alt="" class="absolute xl:h-[19vh]">
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- here is the frntend logic in here that we can use so that i can make it look so professional blog page which also includes category inside it so that we can generate many blog pages more easily in here -->
+</body>
+<!-- this is the etion of the script in here -->
+
+</html>

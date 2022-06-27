@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        SignUp --BB3BLOG--
+    </title>
+    <link rel="stylesheet" href="../csstoken/style.css">
+</head>
+
+<body>
+    <!-- to set upa faviconm we have top use the favicon image and its small size and syntax in here -->
+
+    <!-- 
+        navbar place will be inherited by different code using old html template and tailwindcss
+     -->
+
+
+
+    <!-- sign up form in here -->
+    <section class="sectin">
+        <!-- now here we have to use the thing in here such that we can make it here-->
+        <div class="roll">
+            <!-- how to make up ther normal UI design in here -->
+            <form action="" id="normalform">
+                <div class="signup">
+                    <h1 class="ja"></h1>            
+                </div>
+                <div class="i1">
+                    <label for="first_name">first Name</label>
+                    <input type="text" required id="first_name" name="first_name">
+                </div>
+                <div class="i2">
+                    <label for="las_name">Last Name</label>
+                    <input type="text" required id="last_name" name="last_name">
+                </div>
+                <div class="i3">
+                    <label for="username">Username</label>
+                    <input type="text" required id="username" name="username">
+                </div>
+                <div class="i4">
+                    <label for="email">Email</label>
+                    <input type="text" required name="email" id="email">
+                </div>
+                <button class="btn-normal" type="submit">Proceed</button>
+            </form>
+        </div>
+    </section>
+    <footer class="footernormal">
+
+    </footer>
+</body>
+<script>
+    let a;
+    var i = 0;
+    var text = 'Welcome to --BB3BLOG-- Sign up Page';
+    function typing() {
+        if (i < text.length) {
+            document.querySelector('.ja').innerHTML += text.charAt(i)
+            i++;
+            setTimeout(typing, 101)
+        }
+    }
+    typing()
+</script>
+
+</html>

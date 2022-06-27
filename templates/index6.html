@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>write in here --BB3BLOG--</title>
+    <link rel="stylesheet" href="../csstoken/style2.css">
+
+    <link rel="stylesheet" href="../assets/richtexteditor/rte_theme_default.css" />
+    <script type="text/javascript" src="../assets/richtexteditor/rte.js"></script>
+    <script type="text/javascript" src='../assets/richtexteditor/plugins/all_plugins.js'></script>
+</head>
+<!-- we just want a username inside in here -->
+
+<!-- navigattingor the navbar section is to introduced in here -->
+
+<body>
+    <main class="nav-main">
+        <nav class="navbar">
+            <ul class="list-item">
+                <li class="l1"><a href="/templates/index.html">Home</a></li>
+                <li><a href="/templates/index5.html">Profile</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+    </main>
+    <!-- this is the main section in here -->
+    <main class="welcome">
+        <h1 class="header">Welcome {{Username}} To the write section of the blog</h1>\
+        <div class="con-write">
+            <div class="cont-white">
+                <p class="intro"></p>
+            </div>
+        </div>
+    </main>
+
+    <div class="stabilize">
+        <h2>Write the blog in here in The rich text editor</h2>
+        <form action="" id="post-form">
+            <input id="div_editor1" style="width: 100%" name="comment_txt">
+            <input type="file" id="fileup">
+            <button type="submit" class="btn-form">Publish</button>
+        </form>
+
+    </div>
+    <!-- this is my footer in here -->
+    <footer class="myfoot">
+        <h2 class="footerheader">This is a big black footer in here</h2>
+        <p class="footerpara">this is a paragraph of the footer which is required to make the important thing in here
+        </p>
+    </footer>
+
+</body>
+
+<script>
+    var editor1 = new RichTextEditor("#div_editor1");
+</script>
+
+<!-- <script src="../normal/jquery/index.js"></script> -->
+
+<!-- loading and writting jqery coede im here -->
+<script>
+    // i will here use the jquery 
+    console.log("hello world");
+    var i = 0;
+    var text = 'Here in --BB3BLOG-- we provide the feature to write as a user in a blog here by which it will be easy for us to make the content available for all of us. This is the first blog page started doing this without giving any admin right so that people rather than commenting or asking questons can also make there Blog using amazing feature of the --BB3BLOG-- called Write Blog here we have made this available in 3 forms.The first one is we provide classic old html css Blog writting techniques for the Geeky people who love the oldest and classic way of uploo0ading the text in The --BB3BLOG--.The second One is the an advanced Rich text view which is quite very advance and prohibits the people to write the code and also Most of the people can adopt it and it is easy to use Now here It comes the --BB3BLOG-- Special default uploading technique or the methods which very easy of the all it is very easy as compared ti the rich text view and the norma l html view it can also help you via you are in a hurry it is quite very very simple and it requires no knowledge of html and css but it is in beta version so it lacks some of the features that are available in the rich text editor. But it will be definately very usefull for the sort cause and for the people who are not compfotable with the rich text editor'
+
+    function typing() {
+        if (i < text.length) {
+            document.querySelector('.intro').innerHTML += text.charAt(i)
+            i++;
+            setTimeout(typing, 16)
+        }
+    }
+    typing()
+</script>
+
+</html>

@@ -1,0 +1,165 @@
+*,*::after,*::before{margin: 0;padding: 0;box-sizing: border-box;}
+html{font-size: 62.5%;}
+  /* color at body is experimemntal we are going to remove it anytime in here */
+
+
+.sectin{
+    height: 100vh;
+    /* background-color: #333; */
+    background-image: linear-gradient(45deg,rgb(34, 34, 174),rgb(227, 227, 152),rgb(234, 113, 113));
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;            
+}
+/* roll is width controller in here */
+.roll{
+    width: 67vw;
+    height: 80vh;
+    border-radius: 25px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: whitesmoke;
+}
+#normalform{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* width:fit-content; */
+    /* we have upper div so yes we can do it easily in here */
+}
+
+/* making the content for the sign up content page in here so we can make it true foerm sign up page in here *
+*/
+.signup{
+
+}
+.signup h1{
+    font-size: 2.73rem; 
+}
+
+label{
+    font-size: 1.7rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+label:hover{
+    color:rgb(255, 159, 33);
+}
+
+#normalform div{
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3.3rem;
+}
+
+#normalform input{
+    position: relative;
+    width: 40rem;
+    border-radius: 10px;
+    font-size:2rem;
+    /* margin-right: 0.5rem; */
+    padding-left: 0.2rem;
+    font-weight: 500;
+    height: 4rem;
+}
+input:hover{
+    border: 2px solid red;
+}
+/* targetting our div in here */
+
+
+.i1{
+
+}
+.i2{
+
+}
+.i3{
+
+}
+.i4{
+ /* margin-left: 2.1rem; */
+ /* padding-left: 1.1rem; */
+}
+.btn-normal{
+    padding: 0.56rem;
+    margin-top: 1.23rem;
+    border: 2px solid greenyellow;
+    color: black;
+    border-radius: 5px;
+    transition: all 0.1s ease-out;
+    box-shadow: 0 0 1px 5px rgba(0 , 0q, 0, 0.5);
+}
+.btn-normal:hover{
+    background-color: green;    
+    color: whitesmoke;
+    box-shadow: 0px 0 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+/*  Applying some of the media query in here so that we can make it clear it up so that it can be formed in here so that responsive designs can be allowed in this form using  Normal css */
+
+@media screen and (max-width:914px) {
+    #normalform input{
+        /* here we have to fire up the most powerfull thong in here */
+        width: 30rem;
+    }
+}
+@media screen and (max-width:774px) {
+
+    .signup h1{
+        font-size: 2.3rem;
+    }
+
+    #normalform input{
+        width: 25rem;
+    }
+}
+@media screen and (max-width:655px) {
+    .signup h1{
+        font-size: 1.9rem;
+    }
+    #normalform input{
+        width: 19rem;
+    }
+}
+
+/* advance adjustment for the android or mobile devices */
+/* mobile adjustments and responsiveness */
+@media screen and (max-width:535px) {
+    .roll{
+        
+    }
+    .signup h1{
+        margin-left: 1rem;
+        margin-right: 1rem;
+        font-size: 1.9rem;
+    }
+
+    #normalform input{
+        width: 19rem;
+    }
+}
+
+/* specially fopr the iphone se support in here */
+
+@media screen and (max-width:470px) {
+    .roll{
+        height: 83vh;
+    }
+    .signup h1{
+        margin-left: 1rem;
+        margin-right: 1rem;
+        font-size: 1.9rem;
+    }
+
+    #normalform input{
+        width: 20rem;
+        height: 3rem;
+    }
+}
